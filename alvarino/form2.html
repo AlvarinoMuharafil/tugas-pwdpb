@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <title>Formulir Brutalist</title>
+    <style>
+        /* Menggunakan font Monospace untuk nuansa 'raw' atau teknis */
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #ffffff; /* Latar putih bersih */
+            color: #000000; /* Teks hitam pekat */
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+            background-color: #ffffff;
+            /* Border tebal dan solid sebagai ciri khas brutalist */
+            border: 3px solid #000000;
+            padding: 20px;
+        }
+        
+        /* Header dengan garis bawah tebal */
+        .header {
+            text-align: center;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #000000;
+        }
+        .header h2 {
+            font-size: 32px;
+            margin: 0;
+            text-transform: uppercase; /* Huruf besar semua untuk kesan tegas */
+        }
+        .header p {
+            margin: 5px 0 0;
+            font-size: 16px;
+        }
+
+        /* Media dengan border tegas */
+        .media-display {
+            margin-bottom: 20px;
+        }
+        .media-display img,
+        .media-display video {
+            max-width: 100%;
+            display: block;
+            border: 3px solid #000000;
+            margin: 0 auto 16px auto;
+        }
+
+        /* Form */
+        .form-content {
+            padding: 0;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        input[type="text"],
+        input[type="password"],
+        input[type="file"],
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 3px solid #000000;
+            box-sizing: border-box;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 16px;
+            background: none; /* Latar transparan */
+        }
+
+        /* Tombol yang sangat kontras dan blocky */
+        .button-group {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .btn {
+            flex-grow: 1;
+            padding: 12px;
+            border: 3px solid #000000;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            text-transform: uppercase;
+            transition: background-color 0.2s, color 0.2s;
+        }
+        .btn-submit { 
+            background-color: #0000ff; /* Aksen biru elektrik */
+            color: #ffffff;
+        }
+        .btn-submit:hover {
+            background-color: #ffffff;
+            color: #0000ff;
+        }
+        .btn-reset { 
+            background-color: #000000;
+            color: #ffffff;
+        }
+        .btn-reset:hover {
+            background-color: #ffffff;
+            color: #000000;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="header">
+            <h2>FORMULIR PENDAFTARAN</h2>
+            <p>DATA WAJIB DIISI</p>
+        </div>
+        
+        <div class="media-display">
+            
+            <video src="https://www.w3schools.com/html/mov_bbb.mp4" controls></video>
+        </div>
+
+        <div class="form-content">
+            <form>
+                <input type="hidden" name="user_id" value="12345">
+                
+                <div class="form-group">
+                    <label for="nama">NAMA LENGKAP</label>
+                    <input type="text" id="nama" name="nama">
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">PASSWORD</label>
+                    <input type="password" id="password" name="password">
+                </div>
+                
+                <div class="form-group">
+                    <label for="alamat">ALAMAT</label>
+                    <textarea id="alamat" name="alamat" rows="3"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="berkas">UNGGAH FOTO PROFIL</label>
+                    <input type="file" id="berkas" name="foto" accept="image/*">
+                </div>
+
+                <div class="form-group">
+                    <label for="video-upload">UNGGAH VIDEO PERKENALAN</label>
+                    <input type="file" id="video-upload" name="video" accept="video/*">
+                </div>
+
+                <div class="button-group">
+                    <button type="reset" class="btn btn-reset">RESET</button>
+                    <button type="submit" class="btn btn-submit">DAFTAR</button>
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+</body>
+</html>
